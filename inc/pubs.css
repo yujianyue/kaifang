@@ -1,0 +1,478 @@
+/**
+ * 本文件功能：公共CSS样式表
+ * 版权声明：保留发行权和署名权
+ * 作者信息：15058593138@qq.com
+ */
+
+/* 全局样式 */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Microsoft YaHei", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #f5f5f5;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* 头部样式 */
+.header {
+    background-color: #fff;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+.header-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.header-title h1 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.logout-btn {
+    padding: 5px 10px;
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.logout-btn:hover {
+    background-color: #d32f2f;
+}
+
+/* 导航样式 */
+.nav {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    background-color: #fff;
+    padding: 0 10px;
+}
+
+.nav-item {
+    padding: 12px 15px;
+    color: #666;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.nav-item:hover {
+    color: #1976d2;
+}
+
+.nav-item.active {
+    color: #1976d2;
+    border-bottom: 2px solid #1976d2;
+}
+
+/* 表单样式 */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: 36px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color ease-in-out .15s;
+}
+
+.form-control:focus {
+    border-color: #1976d2;
+    outline: 0;
+}
+
+textarea.form-control {
+    height: auto;
+}
+
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    user-select: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    transition: all 0.2s;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #1976d2;
+    border-color: #1976d2;
+}
+
+.btn-primary:hover {
+    background-color: #1565c0;
+    border-color: #1565c0;
+}
+
+.btn-danger {
+    color: #fff;
+    background-color: #f44336;
+    border-color: #f44336;
+}
+
+.btn-danger:hover {
+    background-color: #d32f2f;
+    border-color: #d32f2f;
+}
+
+.btn-success {
+    color: #fff;
+    background-color: #4caf50;
+    border-color: #4caf50;
+}
+
+.btn-success:hover {
+    background-color: #388e3c;
+    border-color: #388e3c;
+}
+
+/* 表格样式 */
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    margin-bottom: 15px;
+}
+
+.table {
+    width: 100%;
+    max-width: 100%;
+    border-collapse: collapse;
+}
+
+.table th,
+.table td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.table th {
+    background-color: #f5f5f5;
+    font-weight: bold;
+}
+
+.table tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* 列表头部样式 */
+.list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+.list-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.search-box {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.search-box select {
+    width: 100px;
+    height: 36px;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search-box input {
+    width: 200px;
+    margin-right: 5px;
+}
+
+/* 分页样式 */
+#pagination {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.page-btn {
+    padding: 5px 10px;
+    margin: 0 2px;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    color: #333;
+    border-radius: 4px;
+}
+
+.page-btn:hover {
+    background-color: #f5f5f5;
+}
+
+.page-btn.disabled {
+    color: #ccc;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.page-select {
+    height: 30px;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* 遮罩层样式 */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+}
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-content {
+    width: 90%;
+    max-width: 500px;
+    max-height: 90vh;
+    background-color: #fff;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    transform: translateY(-20px);
+    transition: transform 0.3s;
+}
+
+.modal-overlay.active .modal-content {
+    transform: translateY(0);
+}
+
+.modal-title {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-close {
+    font-size: 24px;
+    cursor: pointer;
+    color: #999;
+}
+
+.modal-body {
+    padding: 15px;
+    overflow-y: auto;
+    flex-grow: 1;
+}
+
+.modal-footer {
+    padding: 10px 15px;
+    border-top: 1px solid #eee;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.modal-footer .btn {
+    margin-left: 10px;
+}
+
+/* 吐司提示样式 */
+.toast {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%) translateY(-20px);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    z-index: 2000;
+    opacity: 0;
+    transition: all 0.3s;
+    text-align: center;
+    max-width: 80%;
+}
+
+.toast.info {
+    background-color: rgba(25, 118, 210, 0.9);
+}
+
+.toast.success {
+    background-color: rgba(76, 175, 80, 0.9);
+}
+
+.toast.error {
+    background-color: rgba(244, 67, 54, 0.9);
+}
+
+.toast.warning {
+    background-color: rgba(255, 152, 0, 0.9);
+}
+
+/* 药方表单样式 */
+.medicine-form {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+.medicine-table {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.medicine-table td {
+    padding: 5px;
+}
+
+.medicine-table .medicine-name {
+    width: 200px;
+}
+
+.medicine-table .medicine-unit {
+    width: 80px;
+}
+
+.medicine-table .medicine-price {
+    width: 100px;
+}
+
+.medicine-table .medicine-amount {
+    width: 80px;
+}
+
+/* 自动完成下拉菜单样式 */
+.autocomplete {
+    position: relative;
+    display: inline-block;
+}
+
+.autocomplete-items {
+    position: absolute;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    z-index: 99;
+    left: 0;
+    right: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.autocomplete-items div {
+    padding: 8px 10px;
+    cursor: pointer;
+}
+
+.autocomplete-items div:hover {
+    background-color: #f1f1f1;
+}
+
+.autocomplete-active {
+    background-color: #1976d2 !important;
+    color: #fff;
+}
+
+/* 响应式样式 */
+@media (max-width: 768px) {
+    .list-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .search-box {
+        width: 100%;
+        margin-top: 10px;
+    }
+    
+    .search-box input {
+        flex-grow: 1;
+    }
+    
+    .table th, .table td {
+        padding: 6px 4px;
+        font-size: 13px;
+    }
+}
+
+/* 打印页面样式 */
+@media print {
+    body {
+        background-color: #fff;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .no-print {
+        display: none !important;
+    }
+    
+    .print-only {
+        display: block !important;
+    }
+    
+    .print-container {
+        width: 100%;
+        padding: 15px;
+    }
+}

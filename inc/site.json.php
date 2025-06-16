@@ -1,0 +1,1 @@
+{"site_name":"中医处方管理系统","site_logo":"","site_doctor":"张医师","site_address":"某某中医诊所01号","site_phone":"12345678901"}
